@@ -1,15 +1,15 @@
-/* Задание 2.
+/* Р—Р°РґР°РЅРёРµ 2.
 
-Создайте базу данных example, разместите в ней таблицу users, 
-состоящую из двух столбцов, числового id и строкового name.*/
+РЎРѕР·РґР°Р№С‚Рµ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… example, СЂР°Р·РјРµСЃС‚РёС‚Рµ РІ РЅРµР№ С‚Р°Р±Р»РёС†Сѓ users, 
+СЃРѕСЃС‚РѕСЏС‰СѓСЋ РёР· РґРІСѓС… СЃС‚РѕР»Р±С†РѕРІ, С‡РёСЃР»РѕРІРѕРіРѕ id Рё СЃС‚СЂРѕРєРѕРІРѕРіРѕ name.*/
 
 CREATE DATABASE IF NOT EXISTS example;
 USE example;
 CREATE TABLE IF NOT EXISTS users(
 	id SERIAL PRIMARY KEY,
-	name VARCHAR(255) COMMENT 'Столбец имён',
+	name VARCHAR(255) COMMENT 'РЎС‚РѕР»Р±РµС† РёРјС‘РЅ',
 	UNIQUE unique_name (name(10))
-) COMMENT 'Таблица пользователей';
+) COMMENT 'РўР°Р±Р»РёС†Р° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№';
 
 SELECT * FROM users;
 DESCRIBE users;
