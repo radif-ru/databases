@@ -15,3 +15,5 @@ echo -e $txt > ~/.my.cnf
 
 chmod u=-,g=rw,o=- ~/.my.cnf
 chown root:1000 ~/.my.cnf
+
+ll ~ | grep .my.cnf
