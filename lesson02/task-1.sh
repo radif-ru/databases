@@ -7,9 +7,8 @@
 
 sudo apt install mysql-server
 
-nano ~/.my.cnf
+txt="[client]
+\nuser=root
+\npassword=root_password"
 
-# Добавляем строки и сохраняем:
-# [client]
-# user=root
-# password=*****
+echo -e $txt > ~/.my.cnf

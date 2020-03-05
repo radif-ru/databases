@@ -6,7 +6,9 @@
 # разверните содержимое дампа в новую базу данных sample.
 
 mysqldump example > ~/mysql/example-dump.sql
-mysql
-CREATE DATABASE sample;
-exit
+
+mysql <<EOF
+CREATE DATABASE IF NOT EXISTS sample;
+EOF
+
 mysql sample < ~/mysql/example-dump.sql
